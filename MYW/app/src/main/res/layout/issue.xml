@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green"
+
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/issue_header"
+        android:orientation="horizontal"
+        >
+
+
+
+        <TextView
+
+            android:id="@+id/issue_title"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issue Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/issue_upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/upvote"
+            android:minWidth="60dp"
+            android:text="50"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/issue_downvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:drawableStart="@drawable/downvote"
+            android:minWidth="60dp"
+            android:text="50"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/issue_header"
+        android:id="@+id/issue_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id : #990909"
+        android:textStyle="italic"
+        android:textColor="@color/grey_60"
+        />
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/issue_id"
+        android:id="@+id/issue_severity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Severity : Low"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+       />
+    <TextView
+        android:layout_toRightOf="@id/issue_author"
+        android:id="@+id/issue_status"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBaseline="@id/issue_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : Open"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/issue_severity"
+        android:id="@+id/issue_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author : Baman"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/issue_author"
+        android:id="@+id/issue_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description : Baman can refer to several things, including a branch of the Bank of Baroda, a character in a family relationship problem, a book, a historical figure, a clothing collection, or a Haryanvi song. "
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

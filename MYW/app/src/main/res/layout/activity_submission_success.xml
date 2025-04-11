@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollSubmissionSuccess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Card to display success info -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <!-- Check Icon -->
+                <ImageView
+                    android:id="@+id/ivCheckIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/check_circle"
+                    android:contentDescription="Success Icon"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Main Title -->
+                <TextView
+                    android:id="@+id/tvSuccessTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Complaint Registered Successfully"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Subtext -->
+                <TextView
+                    android:id="@+id/tvSuccessMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you for raising your voice. Your complaint has been successfully registered with the relevant authorities."
+
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center" />
+
+                <!-- Additional note about SMS updates -->
+                <TextView
+                    android:id="@+id/tvSuccessSMSInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You will receive updates on the status of your complaint via SMS on your registered contact number."
+
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+
+                <!-- Complaint ID -->
+                <TextView
+                    android:id="@+id/tvComplaintID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complaint ID: #CMP-742834"
+                    android:textStyle="bold"
+
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Register Another Complaint Button -->
+        <Button
+            android:id="@+id/btnRegisterAnother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Another Complaint"
+            android:background="@drawable/basic_button"
+
+            android:textStyle="bold"
+            android:layout_marginHorizontal="16dp"/>
+    </LinearLayout>
+</ScrollView>

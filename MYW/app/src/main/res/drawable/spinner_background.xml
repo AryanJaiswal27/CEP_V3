@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <stroke
+                android:width="1dp"
+                android:color="#DDDDDD" />
+            <corners android:radius="8dp" />
+            <padding
+                android:left="8dp"
+                android:top="8dp"
+                android:right="8dp"
+                android:bottom="8dp" />
+        </shape>
+    </item>
+
+    <!-- Down arrow icon overlay -->
+    <item
+        android:drawable="@drawable/down"
+    android:gravity="right|center_vertical" />
+</layer-list>

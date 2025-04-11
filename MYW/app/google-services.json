@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "681102958709",
+    "project_id": "myw-aryanjaiswal",
+    "storage_bucket": "myw-aryanjaiswal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681102958709:android:5af960a5d1f8e36967d83c",
+        "android_client_info": {
+          "package_name": "com.example.myw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFx_6GucwrtJyulOFAoWLB9ZMINWZsOd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
